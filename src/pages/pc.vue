@@ -1,13 +1,13 @@
 <template>
-  pc popup
-  <Popup v-if="isLoaded" attach="#teleported" style="padding: 100px" />
+  <div style="margin-bottom: 20px;">
+    pc popup
+  </div>
+  <Popup content="这是一个弹出框" attach="#teleported">
+    <Button variant="outline">触发元素</Button>
+  </Popup>
 </template>
 
 <script lang="ts" setup>
-import { ref, onMounted } from 'vue';
-import { Popup } from 'tdesign-vue-next';
-const isLoaded = ref(false);
-onMounted(() => {
-    isLoaded.value = true;
-});
+import { Popup, Button } from 'tdesign-vue-next';
+
 </script>
