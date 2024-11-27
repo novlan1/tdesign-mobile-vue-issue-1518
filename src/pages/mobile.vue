@@ -1,6 +1,6 @@
 <template>
   moible popup
-  <Popup v-if="isLoaded" v-model="visible" placement="bottom" attach="#teleported" style="padding: 100px" />
+  <Popup v-model="visible" placement="bottom" attach="#teleported" style="padding: 100px" />
 </template>
 
 <script lang="ts" setup>
